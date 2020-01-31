@@ -1,0 +1,4 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+254.3256,255.9678,Hand,FailOnTouchObstacleMed,PickedUp
+258.5778,261.6,WristToElbow,FailOnTouchObstacleLong,RightGate
+258.6,261.5778,WristToElbow,FailOnTouchObstacleMed,LeftGate

@@ -1,0 +1,12 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+533.2988,535.321,Hand,FailOnTouchObstacleShort,PickedUp
+533.9445,535.6778,Hand,FailOnTouchObstacleMed,LeftGate
+533.9445,535.6778,Hand,FailOnTouchObstacleLong,LeftGate
+534.2222,534.2333,HandToWrist,FailOnTouchObstacleMed,LeftGate
+534.2222,534.2333,HandToWrist,FailOnTouchObstacleLong,LeftGate
+534.2444,534.2556,HandToWrist,FailOnTouchObstacleMed,LeftGate
+534.2444,534.2556,HandToWrist,FailOnTouchObstacleLong,LeftGate
+534.2667,535.6667,HandToWrist,FailOnTouchObstacleMed,LeftGate
+534.2667,535.6667,HandToWrist,FailOnTouchObstacleLong,LeftGate
+536.6276,538.2585,Hand,FailOnTouchObstacleMed,PickedUp
+538.3334,,HandToWrist,FailOnTouchObstacleMed,Pushed

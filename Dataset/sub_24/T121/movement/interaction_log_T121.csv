@@ -1,0 +1,16 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+973.3778,973.5,Hand,FailOnTouchObstacleLong,RightGate
+973.4,973.5222,Hand,FailOnTouchObstacleMed,RightGate
+973.4111,973.5667,HandToWrist,FailOnTouchObstacleLong,RightGate
+973.4222,973.5778,HandToWrist,FailOnTouchObstacleMed,RightGate
+973.4667,974.8778,WristToElbow,FailOnTouchObstacleLong,RightGate
+973.4889,974.8556,WristToElbow,FailOnTouchObstacleMed,RightGate
+973.7222,974.6223,Hand,FailOnTouchObstacleLong-1,RightGate
+973.7889,974.6,HandToWrist,FailOnTouchObstacleLong-1,RightGate
+974.0556,974.3778,Hand,Target,Pushed
+974.1651,,Hand,Target,PickedUp
+974.2,974.3445,WristToElbow,FailOnTouchObstacleLong-1,RightGate
+974.7556,974.9556,HandToWrist,FailOnTouchObstacleMed,RightGate
+974.7778,974.9667,HandToWrist,FailOnTouchObstacleLong,RightGate
+974.8223,974.9667,Hand,FailOnTouchObstacleMed,RightGate
+974.8334,974.9889,Hand,FailOnTouchObstacleLong,RightGate

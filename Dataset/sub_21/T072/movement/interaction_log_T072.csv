@@ -1,0 +1,15 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+768.9977,770.3601,Hand,FailOnTouchObstacleLong,PickedUp
+769.4778,769.6778,Hand,FailOnTouchObstacleLong,RightGate
+769.9556,770.4445,Hand,FailOnTouchObstacleLong,RightGate
+769.9667,770.3778,Hand,FailOnTouchObstacleLong,LeftGate
+771.0111,772.4667,Hand,FailOnTouchObstacleLong,LeftGate
+771.0778,772.4778,HandToWrist,FailOnTouchObstacleLong,LeftGate
+771.2444,772.5222,WristToElbow,FailOnTouchObstacleLong,LeftGate
+771.2667,771.5778,Hand,FailOnTouchObstacleMed,RightGate
+771.2667,771.5778,Hand,FailOnTouchObstacleMed,Pushed
+771.2778,771.3223,Hand,FailOnTouchObstacleShort,LeftGate
+771.5777,772.6722,Hand,FailOnTouchObstacleMed,PickedUp
+771.5889,771.6,Hand,FailOnTouchObstacleMed,RightGate
+771.6334,771.6667,HandToWrist,FailOnTouchObstacleShort,LeftGate
+771.6667,771.6889,FailOnTouchObstacleMed,FailOnTouchObstacleShort-1,Pushed

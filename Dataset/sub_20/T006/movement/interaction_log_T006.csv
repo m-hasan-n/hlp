@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+90.03333,90.26666999999999,Hand,FailOnTouchObstacleMed,Pushed
+90.04445,90.66667,Hand,FailOnTouchObstacleLong,LeftGate
+90.05556,90.25555,Hand,FailOnTouchObstacleMed,LeftGate
+90.06667,90.14445,Hand,FailOnTouchObstacleMed,RightGate
+90.14445,90.58889,HandToWrist,FailOnTouchObstacleLong,LeftGate
+90.2,90.24445,Hand,FailOnTouchObstacleMed,RightGate
+90.22724000000001,91.34396,Hand,FailOnTouchObstacleMed,PickedUp
+90.27778,90.28889000000001,Hand,FailOnTouchObstacleMed,LeftGate

@@ -1,0 +1,4 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+1242.789,,Hand,FailOnTouchObstacleLong-1,RightGate
+1242.833,,HandToWrist,FailOnTouchObstacleLong-1,RightGate
+1242.989,,WristToElbow,FailOnTouchObstacleLong-1,RightGate

@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+727.3,,Hand,FailOnTouchObstacleMed,Pushed
+727.3556,,Hand,FailOnTouchObstacleLong,RightGate
+727.3667,,Hand,FailOnTouchObstacleMed,LeftGate
+727.5317,,Hand,FailOnTouchObstacleMed,PickedUp
+727.6445,727.9667,Hand,FailOnTouchObstacleMed,RightGate
+727.7333,,HandToWrist,FailOnTouchObstacleLong,RightGate
+728.2556,728.3667,WristToElbow,FailOnTouchObstacleLong,RightGate
+728.4445,,HandToWrist,FailOnTouchObstacleMed,Pushed

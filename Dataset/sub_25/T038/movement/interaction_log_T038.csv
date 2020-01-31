@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+517.1582,,Hand,FailOnTouchObstacleLong,PickedUp
+517.4556,,Hand,FailOnTouchObstacleShort,RightGate
+517.4556,,Hand,FailOnTouchObstacleMed,RightGate
+517.6111,,HandToWrist,FailOnTouchObstacleMed,RightGate
+517.6111,,HandToWrist,FailOnTouchObstacleShort,RightGate
+517.7333,,Hand,FailOnTouchObstacleLong,LeftGate
+518.0222,,WristToElbow,FailOnTouchObstacleShort,RightGate
+518.0222,,WristToElbow,FailOnTouchObstacleMed,RightGate

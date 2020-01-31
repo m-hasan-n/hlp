@@ -1,0 +1,10 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+717.9457,719.5319999999999,Hand,FailOnTouchObstacleLong,PickedUp
+718.9556,718.9667,Hand,FailOnTouchObstacleLong,RightGate
+718.9889,719.0,Hand,FailOnTouchObstacleLong,RightGate
+719.0111,719.4889,Hand,FailOnTouchObstacleLong,RightGate
+719.0333,719.0444,Hand,FailOnTouchObstacleLong,LeftGate
+719.0667,719.0778,Hand,FailOnTouchObstacleLong,LeftGate
+719.0889,719.1667,Hand,FailOnTouchObstacleLong,LeftGate
+719.1778,719.2778,Hand,FailOnTouchObstacleLong,LeftGate
+719.2889,719.7222,Hand,FailOnTouchObstacleLong,LeftGate

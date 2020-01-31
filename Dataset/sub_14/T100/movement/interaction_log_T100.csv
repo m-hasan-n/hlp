@@ -1,0 +1,8 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+994.0222,,Hand,FailOnTouchObstacleMed,Pushed
+994.0445,994.3,Hand,FailOnTouchObstacleShort-1,LeftGate
+994.0556,994.1778,Hand,FailOnTouchObstacleMed,RightGate
+994.1938,,Hand,FailOnTouchObstacleMed,PickedUp
+994.2,,Hand,FailOnTouchObstacleMed,RightGate
+994.6667,,Hand,FailOnTouchObstacleMed,LeftGate
+995.1445,,HandToWrist,FailOnTouchObstacleMed,Pushed

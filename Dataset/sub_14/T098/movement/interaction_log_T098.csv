@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+967.2778,967.5334,Hand,FailOnTouchObstacleMed,Pushed
+967.3,967.7222,Hand,FailOnTouchObstacleLong,LeftGate
+967.3,967.5222,Hand,FailOnTouchObstacleMed,LeftGate
+967.3112,967.5222,Hand,FailOnTouchObstacleMed,RightGate
+967.3556,967.7222,Hand,FailOnTouchObstacleShort,RightGate
+967.4222,967.6334,HandToWrist,FailOnTouchObstacleLong,LeftGate
+967.541,968.7811,Hand,FailOnTouchObstacleMed,PickedUp
+967.6223,967.6334,HandToWrist,FailOnTouchObstacleShort,RightGate

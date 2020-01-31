@@ -1,0 +1,8 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+308.1222,308.3445,Hand,FailOnTouchObstacleShort,RightGate
+308.1222,308.3445,Hand,FailOnTouchObstacleLong,RightGate
+308.1222,308.3445,Hand,FailOnTouchObstacleMed,RightGate
+308.1889,308.3556,HandToWrist,FailOnTouchObstacleShort,RightGate
+308.1889,308.3556,HandToWrist,FailOnTouchObstacleLong,RightGate
+308.1889,308.3556,HandToWrist,FailOnTouchObstacleMed,RightGate
+308.6111,,HandToWrist,FailOnTouchObstacleMed-1,Pushed

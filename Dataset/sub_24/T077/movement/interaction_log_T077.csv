@@ -1,0 +1,11 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+616.4,,Hand,FailOnTouchObstacleMed,Pushed
+616.4333,616.7111,Hand,FailOnTouchObstacleLong,RightGate
+616.4445,616.5333,Hand,FailOnTouchObstacleMed,LeftGate
+616.5111,616.6556,Hand,FailOnTouchObstacleMed,RightGate
+616.5422,,Hand,FailOnTouchObstacleMed,PickedUp
+616.7444,616.8667,Hand,FailOnTouchObstacleMed,RightGate
+616.9333,616.9445,Hand,FailOnTouchObstacleMed,RightGate
+616.9778,,Hand,FailOnTouchObstacleMed,RightGate
+617.1,,Hand,FailOnTouchObstacleMed,LeftGate
+617.1111,,HandToWrist,FailOnTouchObstacleMed,Pushed

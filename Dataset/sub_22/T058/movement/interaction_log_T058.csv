@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+529.3222,529.5222,Hand,FailOnTouchObstacleMed,Pushed
+529.4461,530.887,Hand,FailOnTouchObstacleMed,PickedUp
+530.0667,530.5444,Hand,FailOnTouchObstacleLong,LeftGate
+530.1778,530.1889,Hand,FailOnTouchObstacleMed,RightGate
+530.1778,530.2444,Hand,FailOnTouchObstacleMed,LeftGate
+530.2,530.2222,Hand,FailOnTouchObstacleMed,RightGate
+530.2667,530.9667,Hand,FailOnTouchObstacleMed,LeftGate
+530.4111,530.9778,Hand,FailOnTouchObstacleMed,RightGate

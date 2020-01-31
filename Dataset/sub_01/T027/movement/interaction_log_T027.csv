@@ -1,0 +1,8 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+369.2889,,Hand,FailOnTouchObstacleLong,Pushed
+369.3222,369.6556,Hand,FailOnTouchObstacleShort,LeftGate
+369.3222,369.6556,Hand,FailOnTouchObstacleMed,RightGate
+369.3333,,Hand,FailOnTouchObstacleLong,RightGate
+369.385,,Hand,FailOnTouchObstacleLong,PickedUp
+369.6889,,Hand,FailOnTouchObstacleLong,LeftGate
+370.5111,,HandToWrist,FailOnTouchObstacleLong,Pushed

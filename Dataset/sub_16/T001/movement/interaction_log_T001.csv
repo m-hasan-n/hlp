@@ -1,0 +1,5 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+134.4444,134.9444,WristToElbow,FailOnTouchObstacleMed,RightGate
+134.4444,134.9444,WristToElbow,FailOnTouchObstacleLong,RightGate
+135.1,135.2222,WristToElbow,FailOnTouchObstacleMed,RightGate
+135.1,135.2222,WristToElbow,FailOnTouchObstacleLong,RightGate

@@ -1,0 +1,14 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+413.9111,414.4556,Hand,FailOnTouchObstacleLong,Pushed
+413.9222,414.8778,Hand,FailOnTouchObstacleShort,LeftGate
+413.9222,414.8778,Hand,FailOnTouchObstacleMed,LeftGate
+413.9222,414.0556,Hand,FailOnTouchObstacleLong,RightGate
+414.0222,414.5556,HandToWrist,FailOnTouchObstacleShort,LeftGate
+414.0222,414.5556,HandToWrist,FailOnTouchObstacleMed,LeftGate
+414.0778,414.2111,Hand,FailOnTouchObstacleLong,RightGate
+414.189,416.1215,Hand,FailOnTouchObstacleLong,PickedUp
+414.2222,414.4111,Hand,FailOnTouchObstacleLong,RightGate
+414.4667,414.4778,Hand,FailOnTouchObstacleLong,RightGate
+414.5,414.5111,Hand,FailOnTouchObstacleLong,RightGate
+414.5334,414.5445,Hand,FailOnTouchObstacleLong,RightGate
+414.5667,414.5778,Hand,FailOnTouchObstacleLong,RightGate

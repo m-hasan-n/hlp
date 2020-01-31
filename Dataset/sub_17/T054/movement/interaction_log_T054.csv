@@ -1,0 +1,5 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+779.4556,,HandToWrist,FailOnTouchObstacleShort,LeftGate
+779.4556,,HandToWrist,FailOnTouchObstacleMed,LeftGate
+779.4556,,HandToWrist,FailOnTouchObstacleLong,RightGate
+779.4556,,HandToWrist,FailOnTouchObstacleMed,Pushed

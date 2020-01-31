@@ -1,0 +1,16 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+43.45555,43.844440000000006,Hand,FailOnTouchObstacleShort,RightGate
+43.45555,43.844440000000006,Hand,FailOnTouchObstacleLong,RightGate
+43.522220000000004,44.05556,HandToWrist,FailOnTouchObstacleShort,RightGate
+43.522220000000004,44.05556,HandToWrist,FailOnTouchObstacleLong,RightGate
+43.76667,46.43333,WristToElbow,FailOnTouchObstacleShort,RightGate
+43.76667,,WristToElbow,FailOnTouchObstacleLong,RightGate
+44.655559999999994,46.3,Hand,FailOnTouchObstacleLong-1,Pushed
+44.7,44.9,Hand,FailOnTouchObstacleLong-1,LeftGate
+44.7,45.14445,Hand,FailOnTouchObstacleMed,RightGate
+44.89183,46.24347,Hand,FailOnTouchObstacleLong-1,PickedUp
+44.95555,45.022220000000004,Hand,FailOnTouchObstacleLong-1,LeftGate
+45.67778,,HandToWrist,FailOnTouchObstacleShort,RightGate
+45.67778,,HandToWrist,FailOnTouchObstacleLong,RightGate
+45.9,46.28889,Hand,FailOnTouchObstacleLong-1,LeftGate
+46.46667,,WristToElbow,FailOnTouchObstacleShort,RightGate

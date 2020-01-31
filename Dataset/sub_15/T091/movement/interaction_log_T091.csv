@@ -1,0 +1,13 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+734.1556,734.2111,Hand,FailOnTouchObstacleMed,Pushed
+734.1667,,Hand,FailOnTouchObstacleShort,LeftGate
+734.1667,734.2111,Hand,FailOnTouchObstacleMed,LeftGate
+734.1667,,Hand,FailOnTouchObstacleLong,RightGate
+734.2015,,Hand,FailOnTouchObstacleMed,PickedUp
+734.2222,,Hand,FailOnTouchObstacleMed,LeftGate
+734.2333,,HandToWrist,FailOnTouchObstacleShort,LeftGate
+734.2333,,HandToWrist,FailOnTouchObstacleLong,RightGate
+734.3778,,WristToElbow,FailOnTouchObstacleShort,LeftGate
+734.3778,,WristToElbow,FailOnTouchObstacleLong,RightGate
+734.4,,Hand,FailOnTouchObstacleMed,RightGate
+734.4111,,HandToWrist,FailOnTouchObstacleMed,Pushed

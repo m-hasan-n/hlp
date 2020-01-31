@@ -1,0 +1,8 @@
+object,x,y,z,width,height,depth
+Target,0,0.7727079,0.175,0.04999959,0.08541586,0.04999948
+FailOnTouchObstacleMed,-0.0075,0.79,-0.105,0.1,0.12,0.04999995
+FailOnTouchObstacleShort,-0.2675,0.79,-0.105,0.04999995,0.12,0.04999995
+FailOnTouchObstacleLong,0.1525,0.79,-0.105,0.15,0.12,0.05000001
+FailOnTouchObstacleShort-1,-0.0775,0.79,0.055,0.04999995,0.12,0.04999995
+FailOnTouchObstacleLong-1,0.1425,0.79,0.055,0.15,0.12,0.05000001
+FailOnTouchObstacleMed-1,-0.2275,0.79,0.055,0.1,0.12,0.04999995

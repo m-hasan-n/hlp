@@ -1,0 +1,9 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+447.4222,447.6667,Hand,FailOnTouchObstacleLong,Pushed
+447.4556,447.6667,Hand,FailOnTouchObstacleLong,LeftGate
+447.4556,449.0889,Hand,FailOnTouchObstacleMed,RightGate
+447.6558,448.8737,Hand,FailOnTouchObstacleLong,PickedUp
+447.6778,448.3556,Hand,FailOnTouchObstacleLong,LeftGate
+447.6778,448.1778,HandToWrist,FailOnTouchObstacleMed,RightGate
+448.7111,448.9222,Hand,FailOnTouchObstacleLong,LeftGate
+449.2,,FailOnTouchObstacleLong-1,FailOnTouchObstacleLong,Pushed

@@ -1,0 +1,6 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+966.1223,,Hand,FailOnTouchObstacleMed-1,Pushed
+966.1445,966.3,Hand,FailOnTouchObstacleMed-1,RightGate
+966.2233,,Hand,FailOnTouchObstacleMed-1,PickedUp
+966.2333,,Hand,FailOnTouchObstacleMed-1,LeftGate
+966.5445,,Hand,FailOnTouchObstacleMed-1,RightGate

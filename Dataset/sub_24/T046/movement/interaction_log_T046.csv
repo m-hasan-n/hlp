@@ -1,0 +1,8 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+433.0778,433.5667,Hand,FailOnTouchObstacleShort,Pushed
+433.1,433.4667,Hand,FailOnTouchObstacleShort,RightGate
+433.1,433.5889,Hand,FailOnTouchObstacleLong,LeftGate
+433.1,433.5889,Hand,FailOnTouchObstacleMed,LeftGate
+433.3445,433.5111,Hand,FailOnTouchObstacleShort,LeftGate
+433.5137,434.0609,Hand,FailOnTouchObstacleShort,PickedUp
+433.5222,433.5445,Hand,FailOnTouchObstacleShort,LeftGate

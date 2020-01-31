@@ -1,0 +1,16 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+791.1445,791.3334,Hand,FailOnTouchObstacleShort,RightGate
+791.1445,791.3334,Hand,FailOnTouchObstacleLong,LeftGate
+791.1445,791.3334,Hand,FailOnTouchObstacleMed,RightGate
+791.1889,791.4333,HandToWrist,FailOnTouchObstacleShort,RightGate
+791.1889,791.4333,HandToWrist,FailOnTouchObstacleLong,LeftGate
+791.1889,791.4333,HandToWrist,FailOnTouchObstacleMed,RightGate
+791.2667,,WristToElbow,FailOnTouchObstacleShort,RightGate
+791.2667,,WristToElbow,FailOnTouchObstacleLong,LeftGate
+791.2667,,WristToElbow,FailOnTouchObstacleMed,RightGate
+791.7111,791.7889,Hand,FailOnTouchObstacleMed-1,Pushed
+791.7222,791.8667,Hand,FailOnTouchObstacleShort-1,LeftGate
+791.7222,791.8667,Hand,FailOnTouchObstacleLong-1,LeftGate
+791.7222,791.7889,Hand,FailOnTouchObstacleMed-1,RightGate
+791.785,792.4549,Hand,FailOnTouchObstacleMed-1,PickedUp
+791.9222,792.5111,Hand,FailOnTouchObstacleMed-1,RightGate

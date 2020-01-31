@@ -1,0 +1,12 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+595.8989,596.837,Hand,FailOnTouchObstacleLong,PickedUp
+597.1889,597.3667,Hand,FailOnTouchObstacleMed,RightGate
+597.2333,597.5111,HandToWrist,FailOnTouchObstacleMed,RightGate
+597.3445,597.9222,WristToElbow,FailOnTouchObstacleMed,RightGate
+597.3556,598.1,Hand,FailOnTouchObstacleLong,RightGate
+597.4,598.5667,HandToWrist,FailOnTouchObstacleLong,RightGate
+597.8312,,Hand,FailOnTouchObstacleLong-1,PickedUp
+597.9889,,WristToElbow,FailOnTouchObstacleLong,RightGate
+598.0667,,Hand,FailOnTouchObstacleShort-1,RightGate
+598.1778,,HandToWrist,FailOnTouchObstacleShort-1,RightGate
+598.6445,,WristToElbow,FailOnTouchObstacleShort-1,RightGate

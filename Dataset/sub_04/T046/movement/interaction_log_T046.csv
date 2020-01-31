@@ -1,0 +1,6 @@
+start_time,end_time,dominant_object,non_dominant_object,interaction_type
+396.0556,397.3889,Hand,FailOnTouchObstacleMed,Pushed
+396.0747,397.2813,Hand,FailOnTouchObstacleMed,PickedUp
+396.1111,396.7556,Hand,FailOnTouchObstacleMed,RightGate
+396.5889,397.1222,Hand,FailOnTouchObstacleMed,LeftGate
+396.8,397.3778,Hand,FailOnTouchObstacleMed,RightGate
