@@ -13,10 +13,6 @@ currentFolder = pwd;
 %add paths to the required code
 addpath(currentFolder)
 
-% addpath('/home/hasan/Documents/HLC/Code/Moving')
-% addpath('/home/hasan/Documents/HLC/Code/Utilities')
-% addpath('/home/hasan/Documents/HLC/Code/Plotting')
-
 %% Load the shared parameters 
 shared_param = experiments_shared_params();
 
@@ -53,7 +49,7 @@ if(training_required)
         dir_feat,config_subject_ids,all_path_examples, path_subject_ids);
 else
     %% Testing
-    HLP_Testing_Reduced(shared_param , training_protocol);
+    HLP_Testing(shared_param , training_protocol);
 end
 
 end

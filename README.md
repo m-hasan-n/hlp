@@ -29,8 +29,11 @@ MATLAB
 To go through the dataset and do some visualization, run: 
 
 ```
-dataset_demo.m
+dataset_demo 
 ```
+This script goes through some plotting functions that help you visualize 
+the scene in a VR trial showing table and objects on top. You can also 
+visualize motion of the human arm and object and save this animation to a video on your disk.
 
 ## Running experimets, training and testing
 
@@ -53,7 +56,8 @@ whole data from all subjects with splitting the data into 80% for training and 2
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the 
+[LICENSE.md](LICENSE.md) file for details
 
 ## Have a question?
 For queries about the HLP algorithm, please contact Mohamed Hasan (m.hasan@leeds.ac.uk).
