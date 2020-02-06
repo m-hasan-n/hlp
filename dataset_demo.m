@@ -7,16 +7,16 @@
 % animation to a video.
 
 %%
-current_dir = pwd;
-addpath(current_dir)
+curr_dir = pwd;
+addpath([curr_dir '/dev/HLP'],[curr_dir '/dev/Utilities'],[curr_dir '/dev/Plotting'])
 
 %Define which trial (of which subject) you want to visualize
-subject_id = 3; 
-trial_id = 25;
+subject_id = 10; 
+trial_id = 15;
 
 %call the function that plots the scene and objects
 plot_scale = 10;
-subject_dir = '/home/hasan/Documents/human-like-planning/Dataset/sub_01';
+subject_dir = [curr_dir '/Dataset/sub_01'];
 
 %% Plotting the scene table and objects on top
 %In each trial, the subject is told to start from a given location on the table

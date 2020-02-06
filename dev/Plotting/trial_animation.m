@@ -18,11 +18,11 @@ close all
 trial_name = ['T' sprintf('%03d',trial_id)];
 trial_path = fullfile(subject_dir,trial_name);
 
-delay_time=0.3;
-number_frames=30;
+delay_time=0.01;
+number_frames=10;
 fname = fullfile(video_dir, ['human_demo_'  trial_name]);
 writerObj = VideoWriter(fname);
-writerObj.FrameRate = 30;
+writerObj.FrameRate = 10;
 % open the video writer
 open(writerObj);
 
@@ -114,20 +114,6 @@ neck_trajectory_xy = [ neck_x  neck_y];
 animate_trajectory_objects(trial_path,trial_name,pick_push_info,...
     hand_trajectory_timestamp,hand_trajectory_xy,elbow_trajectory_xy,shoulder_trajectory_xy,...
     neck_trajectory_xy,    scene_objects,object_rectangle_handles,plot_scale,writerObj)
-
-%% Print the high-level plan on figure
-% text(-3,-4.5,'High-level Plan','FontSize',25)
-% line([-3.5 -1.2],[-4.8 -4.8],'Color','black','LineWidth',2)
-% text(-3.5,-5,'Keypoint','FontSize',20)
-% text(-2.2,-5,'Action','FontSize',20)
-% line([-3.5 -1.2],[-5.25 -5.25],'Color','black','LineWidth',2)
-% text(-3.2,-5.5,'G2','FontSize',20,'Color','b')
-% text(-2,-5.5,'Go','FontSize',20,'Color','b')
-% % text(-3.2,-5.5,'O1','FontSize',20,'Color','r')
-% % text(-2.5,-5.5,'Move (Right)','FontSize',20,'Color','r')
-% text(-3.2,-6,'O6','FontSize',20,'Color','r')
-% text(-2.5,-6,'Move (Back Left)','FontSize',20,'Color','r')
-% line([-3.5 -1.2],[-6.25 -6.25],'Color','black','LineWidth',2)
 
 
 for ii = 1 :number_frames
