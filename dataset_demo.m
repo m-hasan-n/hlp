@@ -2,8 +2,8 @@
 
 % dataset_demo
 % This script goes through some plotting functions that help you visualize
-% the scene in a trial showing table and objects on top. 
-% You can also visualize the motion of human arm and object and svae this 
+% the scene in a trial showing the table and objects on top. 
+% You can also visualize motion of the human arm and objects and save this 
 % animation to a video.
 
 %%
