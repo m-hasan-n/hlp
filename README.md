@@ -1,9 +1,9 @@
 
 Human-like Planning
 
-This is the "Human-like Planning (HLP)" project. Our objective in this project is to learn human planning skills from VR demonstartions and transfer these skills to robot motion planners. The VR dataset and the source code are released here. More information are givven in ICRA 2020 paper [1]. 
+This is the "Human-like Planning (HLP)" project. Our objective in this project is to learn human planning skills from VR demonstrations and transfer these skills to robot motion planners. The VR dataset and the source code are released here. More information are given in the ICRA 2020 paper [1]. 
 
-To go through the datset and do some visualization, run dataset_demo.m
+To go through the dataset and do some visualization, run dataset_demo.m
 
 To train the decision classifiers, run 
 
