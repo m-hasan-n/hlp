@@ -1,7 +1,7 @@
 
 % Saving extracted data for all subjects from drive to workspace
 
-function save_extracted_training_data(hyper_param)
+function save_extracted_training_data(shared_param )
 
 
 %constant dimensions across all trials
@@ -9,19 +9,19 @@ function save_extracted_training_data(hyper_param)
     scene_geometry_info;
 
 %hyper parameters
-subject_ids = hyper_param.valid_subject_ids;
-N_subjects = hyper_param.N_subjects;
-N_trials = hyper_param.N_trials;
-N_gaps = hyper_param.N_gaps;
-N_gap_features = hyper_param.N_gap_features;
-N_obj_scene = hyper_param.N_obj_scene;
-N_object_features = hyper_param.N_object_features;
-N_max_config_trial = hyper_param.N_max_config_trial;
-N_config_angles = hyper_param.N_config_angles;
-extracted_data_dir = hyper_param.extacted_data_dir;
-scaling_factor = hyper_param.scaling_factor;
-area_scan_resolution = hyper_param.area_scan_resolution;
-trials_base_dir = hyper_param.dataset_dir;
+subject_ids = shared_param.valid_subject_ids;
+N_subjects = shared_param.N_subjects;
+N_trials = shared_param.N_trials;
+N_gaps = shared_param.N_gaps;
+N_gap_features = shared_param.N_gap_features;
+N_obj_scene = shared_param.N_obj_scene;
+N_object_features = shared_param.N_object_features;
+N_max_config_trial = shared_param.N_max_config_trial;
+N_config_angles = shared_param.N_config_angles;
+extracted_data_dir = shared_param.extacted_data_dir;
+scaling_factor = shared_param.scaling_factor;
+area_scan_resolution = shared_param.area_scan_resolution;
+trials_base_dir = shared_param.dataset_dir;
 
 %initialization for gap classifier
 navi_examples = zeros(N_subjects*N_trials*N_gaps,N_gap_features+1);
@@ -60,7 +60,7 @@ for ii = 1 : length(subject_ids)
     %extracted trails data
     subject_id = subject_ids(ii);
     subject_name = sprintf('%03d',subject_id);
-    %subject_data_dir = fullfile(extracted_data_dir,['Pilot' num2str(subject_id)]);
+   
     subject_data_dir = fullfile(extracted_data_dir,subject_name);
     trial_files = dir(subject_data_dir);
     
@@ -222,7 +222,7 @@ config_subject_ids(config_cntr:end,:)=[];
 
 
 %saving
-fname = fullfile(hyper_param.extacted_data_dir , 'all_extracted_data');
+fname = fullfile(shared_param.extacted_data_dir , 'all_extracted_data');
 save(fname, 'navi_examples','navi_subject_ids','object_features','object_response',...
     'object_subject_ids','neighbor_space_features','object_moving_direction',...
     'hand_to_obj_direction','target_to_obj_direction','object_dir_subject_ids',...

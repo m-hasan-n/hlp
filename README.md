@@ -24,6 +24,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 MATLAB
 
+### Install HLP 
+Firstly you have to run
+
+```
+install_hlp 
+```
+
 ### Dataset Demo
 
 To go through the dataset and do some visualization, run: 

@@ -7,11 +7,6 @@
 
 function HLP_experiment_protocols(first_time, training_required, training_protocol)
 
-% Identify current folder
-currentFolder = pwd;
-
-%add paths to the required code
-addpath(currentFolder)
 
 %% Load the shared parameters 
 shared_param = experiments_shared_params();
@@ -19,7 +14,7 @@ shared_param = experiments_shared_params();
 %% Saving training data
 %doing that only once at the first time
 if(first_time)
-    % Saving extracted training data for all subjects to drive
+    % saving extracted training data for all subjects to drive
     save_extracted_training_data(shared_param);
 end
 
