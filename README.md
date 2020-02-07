@@ -39,8 +39,8 @@ To go through the dataset and do some visualization, run:
 dataset_demo 
 ```
 This script goes through some plotting functions that help you visualize 
-the scene in a VR trial showing table and objects on top. You can also 
-visualize motion of the human arm and object and save this animation to a video on your disk.
+the scene in of a VR trial showing the table and objects on top. You can also 
+visualize motion of the human arm and objects. The animation video will be saved to /animated-trials.
 
 ## Running experimets, training and testing
 
