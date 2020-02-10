@@ -1,10 +1,13 @@
 
 
 function [ object_inetaction_data , keypoints_sorted] = spatio_temporal_segment...
-                              (trial_path,trial_name, pick_push_info, pos_change_tol)
+                              (trial_path,trial_name, pick_push_info)
          
 
-
+%Psition change threshold 
+shared_params = experiments_shared_params();
+pos_change_tol = shared_params.pos_change_tol;
+                          
 %find which objects that were pushed or picked in the interaction
 [object_in_interaction, idx ]= unique(table2cell(pick_push_info(:,4)));
 object_pick_push_type = table2cell(pick_push_info(idx,5));

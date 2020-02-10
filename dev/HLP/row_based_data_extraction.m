@@ -1,7 +1,7 @@
 
 
 function row_based_data_extraction(subject_dir,ini_trial, save_dir,...
-    pos_change_tol, unstructured_strating_trial)
+    unstructured_strating_trial)
                 
                 
 %constant dimensions across all trials
@@ -34,7 +34,7 @@ for ii = 1 : size(success_trial_ids,1)
 %     reach_time = target_reaching_time(ii);
     
     %path to the trial
-    trial_name = ['T' sprintf('%03d',trial_id)];
+    trial_name = ['T_' sprintf('%03d',trial_id)];
     trial_path = fullfile(subject_dir,trial_name);
     
     %Hand and Elbow Trajectory path and timestamps
@@ -209,7 +209,7 @@ for ii = 1 : size(success_trial_ids,1)
     pick_push_info_for_segment = [reduced_pick_push_info;target_info];
     
     [ object_inetaction_data , keypoints_sorted] = spatio_temporal_segment...
-        (trial_path,trial_name, pick_push_info_for_segment,pos_change_tol);
+        (trial_path,trial_name, pick_push_info_for_segment);
 
     %in case interaction at the two rows but less than two objects were
     %actually moved

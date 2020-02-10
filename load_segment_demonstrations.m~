@@ -2,7 +2,8 @@
 %loads data of successful trials for all participants
 %extracts and saves the required data for further processing
 
-function load_segment_demonstrations()
+function load_segment_demonstrations(ini_trial , saving_dir,...
+    pos_change_tol, unstructured_strating_trial,exclude_subject_ids)
 
 
 %Dataset directories,
@@ -11,12 +12,10 @@ dataset_dir = fullfile(curr_dir,'Dataset');
 saving_dir = fullfile(curr_dir,'Segmented-Dataset');
 
 %which trials to load 
-shared_param = experiments_shared_params();
-ini_trial = shared_param.initial_trial;
-final_trial = shared_param.final_trial;
+
 
 %which subject to exclude
-excluded_subjects = shared_param.exclude_subject_ids;
+
 
 
 
@@ -30,8 +29,8 @@ for ii = 1 : length(subjects_data)
         subject_dir = fullfile(dataset_dir, subject_name);
         subject_id = str2double(subject_name(end-1:end));
         
-        if ~ismember(subject_id,excluded_subjects)
-            subject_id = ['sub_' sprintf('%02d',subject_id)] ;
+        if ~ismember(subject_id,exclude_subject_ids)
+            subject_id = sprintf('%03d',subject_id);
             %prepare the directory for saving
             saving_dir = fullfile(saving_dir,subject_id);
             if ~exist(saving_dir,'dir')
@@ -41,7 +40,7 @@ for ii = 1 : length(subjects_data)
             %call function to extract and save the data
             %         extract_trial_data_MOVING(subject_dir,ini_trial, saving_dir);
             row_based_data_extraction(subject_dir,ini_trial, saving_dir,...
-                final_trial);
+                pos_change_tol, unstructured_strating_trial);
         end
     end
 end

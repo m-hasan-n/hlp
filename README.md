@@ -44,14 +44,16 @@ visualize motion of the human arm and objects. The animation video will be saved
 
 ## Loading dataset and segmenting the demonstrations
 Before running experiments, training or testing, you have first to load the dataset and segment 
-the human demonstrations. Run:
+the human demonstrations. Run the following script:
 
 ```
 load_segment_demonstrations
 ```
 This script loads data from successful trials for all participants. It also segments the
 demonstrations according to the qualitative spatio-temporal representation given in the paper.
-Segmented demonstrations and extracted data are saved for further processing (e.g. classifiers training).
+Segmented demonstrations and extracted data are saved for further processing (e.g. classifiers training). 
+Data is saved in '/Segmented-Dataset' directory as '/sub_xx/T_yyy.mat' for each 'xx' subject and 
+'yyy' trial (demonstration).   
 
 
 ## Running experimets, training and testing

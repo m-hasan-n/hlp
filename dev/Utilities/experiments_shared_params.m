@@ -6,6 +6,10 @@ function  shared_params = experiments_shared_params()
 %% set random seed for reproducibility
 shared_params.my_random_seed = 1;
 
+%% Dataset initial and final trails to load and segment
+shared_params.initial_trial = 10;
+shared_params.final_trial = 100;
+
 %% arm configuration regression parameters
 shared_params.N_config_angles = 2;
 shared_params.N_max_config_trial = 6;
@@ -49,6 +53,8 @@ shared_params.trained_models_dir = '/home/hasan/Documents/HLC/Data/ICRA/trained_
 %% max number of trials
 shared_params.N_trials = 100;
 
+%% Tolerance threshold for considerable object motion
+shared_params.pos_change_tol = 1e-3;
 %% Options for training the decision classifiers
 shared_params.calssif_options.balancing_flag = 1;
 shared_params.calssif_options.nfold = 5;
