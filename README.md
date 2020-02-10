@@ -63,7 +63,7 @@ directory as '/sub_xx/T_yyy.mat' for each 'xx' subject and 'yyy' trial
 
 
 ## Running experimets, training and testing
-To reproduce the same experiments in ICRA-2020 paper with 
+To reproduce the experiments in ICRA-2020 paper with 
 training and testing the HLP algorithm, run:
 
 ```
