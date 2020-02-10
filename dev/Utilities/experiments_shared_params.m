@@ -45,9 +45,6 @@ shared_params.N_subjects = length(shared_params.valid_subject_ids);
 
 shared_params.variable_subject_training_size = 3:4:23;
 
-%% directories
-% shared_params.trained_models_dir = '/home/hasan/Documents/HLC/Data/ICRA/trained_models';
-
 %% max number of trials
 shared_params.N_trials = 100;
 

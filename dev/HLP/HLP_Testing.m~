@@ -3,8 +3,7 @@
 %test classifier and generates a complete plan
 %similar to the latest plan_gaps_objects_interaction.m
 
-function HLP_Testing(shared_params , trained_models_dir, segmented_data_dir,...
-    experiment_protocol, plan_plot)
+function HLP_Testing(shared_params , trained_models_dir, segmented_data_dir, experiment_protocol)
 
 
 %number of features for each classifier
@@ -72,9 +71,9 @@ for ind_subj_size = 1 : num_size_iter
         for ii = 1 : length(test_sub_ids)
             
             test_sub = test_sub_ids(ii);
-            subject_name = ['sub_' sprintf('%02d',test_sub)];
+            subject_name = sprintf('%03d',test_sub);
             %subject_data_dir = fullfile(extracted_data_dir,['Pilot' num2str(subject_id)]);
-            subject_data_dir = fullfile(segmented_data_dir,subject_name);
+            subject_data_dir = fullfile(extracted_data_dir,subject_name);
             trial_files = dir(subject_data_dir);
             
             %iterate over all trials
@@ -83,7 +82,7 @@ for ind_subj_size = 1 : num_size_iter
                     
                     %load extracte data for this test trial
                     trial_data_id = trial_files(jj).name;
-                    %trial_id_num = str2double(trial_data_id(2:4));
+                    trial_id_num = str2double(trial_data_id(2:4));
                     trial_path = fullfile( subject_data_dir, trial_data_id);
                     load(trial_path,'scene_objects',...
                         'gab_rectangles','row_heights','gabs_flag_go','gabs_flag_return',...
@@ -94,18 +93,14 @@ for ind_subj_size = 1 : num_size_iter
                         'mean_shoulder_elbow_length','mean_elbow_hand_length',...
                         'neck_trajectory_xy','hand_trajectory_xy','elbow_trajectory_xy')
                     
-                    if (plan_plot)
-                        %plot the starting configuration
-                        all_obj = table2array(scene_objects(:,[2 4 5 7]));
-                        all_obj = to_matlab_rectangles(all_obj);
-                        for hh = 1 : 7
-                            rectangle('Position',all_obj(hh,:)*10)
-                        end
-                        hold on
-                    end
-                    
                      
-
+% %                     plot the starting configuration
+%                                     all_obj = table2array(scene_objects(:,[2 4 5 7]));
+%                                     all_obj = to_matlab_rectangles(all_obj);
+%                                     for hh = 1 : 7
+%                                         rectangle('Position',all_obj(hh,:)*10)
+%                                     end
+%                                     hold on
                     
                     %start timer to compute the planning time
                     tic
@@ -115,12 +110,8 @@ for ind_subj_size = 1 : num_size_iter
                     elbow_joint = elbow_trajectory_xy(1,:);
                     hand_joint = start_pos;
                     
-                    if (plan_plot)
-                        plot_arm_configuration(10*neck_joint,...
-                            10*shoulder_joint,10*elbow_joint,...
-                            10*hand_joint,key_config_data(1,:),'blue');
-                    end
-
+%                     plot_arm_configuration(10*neck_joint,10*shoulder_joint,10*elbow_joint,...
+%                         10*hand_joint,key_config_data(1,:),'blue');
                     
                     row_gap_ids = [ones(4,1) ;2*ones(4,1)];
                     row_obj_ids = [ones(3,1) ;2*ones(3,1)];
@@ -142,7 +133,7 @@ for ind_subj_size = 1 : num_size_iter
                         original_segment_responses,...
                         original_gaps_resp,original_objects_resp,...
                         best_estimated_action_type] = ...
-                        row_based_path_planner(row_gap_ids, row_obj_ids,...
+                        row_based_planner_path(row_gap_ids, row_obj_ids,...
                         object_rect_cent_format,target_rect_cent_format,gab_rectangles,...
                         start_pos,gaps_classifier,objects_classifier,...
                         object_direction_classifier,...
@@ -150,7 +141,7 @@ for ind_subj_size = 1 : num_size_iter
                         table_obj.diagonal,N_object_features, scaling_factor,...
                         virtual_objects, starting_config,...
                         mean_shoulder_elbow_length,mean_elbow_hand_length, path_classifier,...
-                        target_obj.width, starting_arm_joints,hand_width,scan_resolution, plan_plot);
+                        target_obj.width, starting_arm_joints,hand_width,scan_resolution);
                     
                     planning_time = [planning_time; toc];
                     

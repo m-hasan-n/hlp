@@ -1,17 +1,16 @@
 
 
-%similar to function "row_based_planner"
-%but adding the path classifier and excluding interaction classifier
+%"row_based_planner"
 
 function [best_start_keypoints, best_end_keypoints,best_start_config,...
     best_estimated_config, best_estimated_arm_joints,original_segment_responses,...
-    original_gaps_resp,original_objects_resp,best_estimated_action_type] = row_based_planner_path...
+    original_gaps_resp,original_objects_resp,best_estimated_action_type] = row_based_path_planner...
     (row_gap_ids, row_obj_ids, object_rect_cent_format,target_rect_cent_format,gab_rectangles,...
     start_pos,gaps_classifier,objects_classifier,...
     object_dir_classifier,arm_config_regressor,hand_width, N_gap_features,...
     table_diagonal,N_object_features, scaling_factor, virtual_objects,...
     starting_config,shoulder_elbow_length,elbow_hand_length, path_classifier,...
-    target_width,starting_arm_joints, link_region,scan_resolution)
+    target_width,starting_arm_joints, link_region,scan_resolution,plan_plot)
 
 
 
@@ -68,19 +67,22 @@ end
 %             'LineWidth',3)
 % end
 
-% for ii = 1 : size(best_end_keypoints,1)
-    
-%     rectangle('Position',to_matlab_rectangles(best_end_keypoints(ii,:))*10,...
-%             'LineWidth',3,'EdgeColor','r','LineStyle','--') 
-    
-%     neck_joint = best_estimated_arm_joints.neck(ii,:);
-%     shoulder_joint = best_estimated_arm_joints.shoulder(ii,:);
-%     elbow_joint = best_estimated_arm_joints.elbow(ii,:);
-%     hand_joint=best_estimated_arm_joints.hand(ii,:);
-    
-%     plot_arm_configuration(10*neck_joint,10*shoulder_joint,10*elbow_joint,...
-%                         10*hand_joint,best_estimated_config(ii,:), 'blue');    
-% end
+if (plan_plot)
+    for ii = 1 : size(best_end_keypoints,1)
+        
+        rectangle('Position',to_matlab_rectangles(best_end_keypoints(ii,:))*10,...
+            'LineWidth',3,'EdgeColor','r','LineStyle','--')
+        
+        neck_joint = best_estimated_arm_joints.neck(ii,:);
+        shoulder_joint = best_estimated_arm_joints.shoulder(ii,:);
+        elbow_joint = best_estimated_arm_joints.elbow(ii,:);
+        hand_joint=best_estimated_arm_joints.hand(ii,:);
+        
+        plot_arm_configuration(10*neck_joint,10*shoulder_joint,10*elbow_joint,...
+            10*hand_joint,best_estimated_config(ii,:), 'blue');
+    end
+
+end
 
 
 

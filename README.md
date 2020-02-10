@@ -67,7 +67,7 @@ To reproduce the same experiments in ICRA-2020 paper with
 training and testing the HLP algorithm, run:
 
 ```
-HLP_experiment_protocols(first_time, training_required, training_protocol)
+HLP_experiment_protocols(first_time, training_required, training_protocol, plot_plan)
 ```
 
 * Set 'first_time' flag to 1 for the first time you run this code. When 
@@ -81,13 +81,26 @@ must be set at the first run only. At other runs, the code will just load
 the extracted data.
 
 * Set 'training_required' flag to 1 only if you need to (re)train the 
-decision classifiers. Unset it if you want to test the HLP algorithm using 
-the (already) trained decision classifiers.  
+decision classifiers. The trained models are saved at '\trained-models'
+Unset it if you want to test the HLP algorithm using the (already) 
+trained decision classifiers and regression models.  
 
 * Set 'training_protocol' to either '80_20' or 'num_subjects_effect'. 
 '80_20' protocol performs cross validation on the whole dataset from all 
 subjects with splitting the data into 80% for training and 20% for testing.  On the other hand, 
 'num_subjects_effect' splits the data on a subject-wise basis. 
+
+* In case of testing the HLP algorithm, set 'plan_plot' to 1 if you want 
+to visualize the generated high-level plan.
+
+For example, at the first time run the following:
+```
+HLP_experiment_protocols(1, 1, '80_20', 0)
+```
+to (1) load and segment the datset (2) extract the 
+data required for machine learning and save the training examples and (3) 
+use the training examples to train the HLP algorithm 
+classifiers and regressors.      
 
 ## License
 
