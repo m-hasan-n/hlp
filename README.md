@@ -52,25 +52,33 @@ the dataset and segment the human demonstrations. Run the following script:
 ```
 load_segment_demonstrations
 ```
-This script loads data from successful trials for all participants. It also segments the
-demonstrations according to the qualitative spatio-temporal representation given in the paper.
-Segmented demonstrations and extracted data are saved for further processing (e.g. classifiers training). 
-Data is saved in '/Segmented-Dataset' directory as '/sub_xx/T_yyy.mat' for each 'xx' subject and 
-'yyy' trial (demonstration).   
+
+This script loads data from successful trials for all participants. 
+Afterwards, it segments the demonstrations according to the qualitative 
+spatio-temporal representation given in the paper. The segmented 
+demonstrations and extracted data are saved for further processing 
+(e.g. classifiers training). Data is saved in '/Segmented-Dataset' 
+directory as '/sub_xx/T_yyy.mat' for each 'xx' subject and 'yyy' trial 
+(demonstration).   
 
 
 ## Running experimets, training and testing
-To reproduce the same experiments in ICRA-2020 paper with training and testing the decision classifiers, run:
+To reproduce the same experiments in ICRA-2020 paper with 
+training and testing the HLP algorithm, run:
 
 ```
 HLP_experiment_protocols(first_time, training_required, training_protocol)
 ```
 
-* Set 'first_time' flag to 1 for the first time you run this code. When set,
-the code will load the segmented demonstrations (that were saved in the 
-previous step) from your local machine to MATLAB workspace. This flag 
-must be set at the first run and for every (re)training session. Unset 
-this flag if you only want to test the HLP algorithm.
+* Set 'first_time' flag to 1 for the first time you run this code. When 
+set, the code will load the segmented demonstrations (that were saved in 
+the previous step) from your local machine to MATLAB workspace. Afterwards, 
+it will extract the data required for training the classifiers. Data are 
+extracted as state-action pairs (training examples) for different 
+classification and regression models. Data extracted from the whole dataset
+are saved as '/segmented-demonstrations/all_extracted_data.mat'. This flag 
+must be set at the first run only. At other runs, the code will just load 
+the extracted data.
 
 * Set 'training_required' flag to 1 only if you need to (re)train the 
 decision classifiers. Unset it if you want to test the HLP algorithm using 
