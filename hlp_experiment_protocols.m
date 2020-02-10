@@ -5,7 +5,7 @@
 %Training and Testing are performed on the organized environment structures
 %available in the dataset
 
-function HLP_experiment_protocols(first_time, training_required, training_protocol)
+function hlp_experiment_protocols(first_time, training_required, training_protocol)
 
 
 %% Load the shared parameters 
