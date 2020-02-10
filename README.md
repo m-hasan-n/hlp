@@ -109,18 +109,21 @@ HLP_experiment_protocols(0, 0, '80_20', 1)
 to test the HLP algorithm on new scenes unseen during training and visualize 
 the high-level generated plan.
 
-## License
 
-This project is licensed under the MIT License - see the 
-[LICENSE.md](LICENSE.md) file for details
 
 ## Have a question?
 For queries about the HLP algorithm, please contact Mohamed Hasan (m.hasan@leeds.ac.uk).
 For queries about the VR dataset, please contact Matthew Warburton (m.warburton@leeds.ac.uk).  
+
  
-## Citing
-If you used this code and/or dataset in academia, please cite the following work:  
+## Citation
+If you find our code/dataset useful in your research, please cite our work:
+[1] M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
+ F. Mushtaq, M. Mon-Williams and A. G. Cohn, “Introducing a Human-like 
+ Planner for Reaching in Cluttered Environments, ” Accepted to appear in 
+ ICRA 2020.
 
-[1] M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang, F. Mushtaq, M. Mon-Williams and A. G. Cohn, “Introducing a Human-like Planner for Reaching in Cluttered Environments, ” Accepted to ICRA 2020.
 
-
+## License
+This project is licensed under the MIT License - see the 
+[LICENSE.md](LICENSE.md) file for details.
