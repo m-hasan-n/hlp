@@ -17,7 +17,8 @@ More information are given in the ICRA 2020 paper [1].
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on 
+your local machine for development and testing purposes. 
 
 
 ### Prerequisites
@@ -39,12 +40,14 @@ To go through the dataset and do some visualization, run:
 dataset_demo 
 ```
 This script goes through some plotting functions that help you visualize 
-the scene in of a VR trial showing the table and objects on top. You can also 
-visualize motion of the human arm and objects. The animation video will be saved to /animated-trials.
+the scene in of a VR trial showing the table and objects on top. 
+You can also visualize motion of the human arm and objects. 
+The animation video will be saved to '/animated-demonstrations' as 
+'demo_Sxx_Tyyy' for subject 'xx' and trial 'yyy'.
 
 ## Loading dataset and segmenting the demonstrations
-Before running experiments, training or testing, you have first to load the dataset and segment 
-the human demonstrations. Run the following script:
+Before running experiments, training or testing, you have first to load 
+the dataset and segment the human demonstrations. Run the following script:
 
 ```
 load_segment_demonstrations
