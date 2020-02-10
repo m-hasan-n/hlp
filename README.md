@@ -66,16 +66,20 @@ To reproduce the same experiments in ICRA-2020 paper with training and testing t
 HLP_experiment_protocols(first_time, training_required, training_protocol)
 ```
 
-* Set 'first_time' flag to 1 for the first time you run this code. WHen set, the code will segment all human 
-demonstrations, extract the required data for training and/or testing the classifiers and save extracted data to your 
-local disk. When unset, the code will load the extracted data from your disk.
- 
-* Set 'training_required' flag to 1 only if you need to (re)train the decision classifiers. Unset it if you want to test 
-the HLP algorithm using the trained decision classifiers.  
+* Set 'first_time' flag to 1 for the first time you run this code. When set,
+the code will load the segmented demonstrations (that were saved in the 
+previous step) from your local machine to MATLAB workspace. This flag 
+must be set at the first run and for every (re)training session. Unset 
+this flag if you only want to test the HLP algorithm.
 
-* Set 'training_protocol' to either '80_20' or 'num_subjects_effect'. '80_20' protocol performs cross validation on the 
-whole data from all subjects with splitting the data into 80% for training and 20% for testing.  On the other hand, 
-'num_subjects_effect' splits the data subject-wise. 
+* Set 'training_required' flag to 1 only if you need to (re)train the 
+decision classifiers. Unset it if you want to test the HLP algorithm using 
+the (already) trained decision classifiers.  
+
+* Set 'training_protocol' to either '80_20' or 'num_subjects_effect'. 
+'80_20' protocol performs cross validation on the whole dataset from all 
+subjects with splitting the data into 80% for training and 20% for testing.  On the other hand, 
+'num_subjects_effect' splits the data on a subject-wise basis. 
 
 ## License
 
