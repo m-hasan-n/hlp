@@ -118,7 +118,8 @@ For queries about the VR dataset, please contact Matthew Warburton (m.warburton@
  
 ## Citation
 If you find our code/dataset useful in your research, please cite our work:
-[1] M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
+
+* [1] M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
  F. Mushtaq, M. Mon-Williams and A. G. Cohn, “Introducing a Human-like 
  Planner for Reaching in Cluttered Environments, ” Accepted to appear in 
  ICRA 2020.
