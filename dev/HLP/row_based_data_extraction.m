@@ -34,7 +34,7 @@ for ii = 1 : size(success_trial_ids,1)
 %     reach_time = target_reaching_time(ii);
     
     %path to the trial
-    trial_name = ['T_' sprintf('%03d',trial_id)];
+    trial_name = ['T' sprintf('%03d',trial_id)];
     trial_path = fullfile(subject_dir,trial_name);
     
     %Hand and Elbow Trajectory path and timestamps

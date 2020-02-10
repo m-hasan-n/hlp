@@ -18,11 +18,11 @@ if(first_time)
     save_extracted_training_data(shared_param);
 else
     % loading extracted training data for all subjects from drive to workspace
-    curr_dir = pwd;
-    training_examples_dir = fullfile(curr_dir,'segmented-demonstrations');
-    fname = fullfile(training_examples_dir , 'all_training_examples');
+    fname = fullfile(shared_param.extacted_data_dir , 'all_training_examples');
     load(fname)
 end
+
+
     
 %% Training and/or Testing
 % 80% training and 20% testing with 5 subject combinations

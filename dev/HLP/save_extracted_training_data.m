@@ -18,10 +18,15 @@ N_obj_scene = shared_param.N_obj_scene;
 N_object_features = shared_param.N_object_features;
 N_max_config_trial = shared_param.N_max_config_trial;
 N_config_angles = shared_param.N_config_angles;
-extracted_data_dir = shared_param.extacted_data_dir;
 scaling_factor = shared_param.scaling_factor;
 area_scan_resolution = shared_param.area_scan_resolution;
-trials_base_dir = shared_param.dataset_dir;
+
+
+
+%Diectories required
+curr_dir = pwd;
+trials_base_dir = fullfile(curr_dir,'dataset');
+segmented_data_dir = fullfile(curr_dir,'segmented-demonstrations');
 
 %initialization for gap classifier
 navi_examples = zeros(N_subjects*N_trials*N_gaps,N_gap_features+1);
@@ -59,9 +64,9 @@ for ii = 1 : length(subject_ids)
     
     %extracted trails data
     subject_id = subject_ids(ii);
-    subject_name = sprintf('%03d',subject_id);
+    subject_name = ['sub_' sprintf('%02d',subject_id)];
    
-    subject_data_dir = fullfile(extracted_data_dir,subject_name);
+    subject_data_dir = fullfile(segmented_data_dir,subject_name);
     trial_files = dir(subject_data_dir);
     
     %iterate over all trials for this subject
@@ -222,9 +227,7 @@ config_subject_ids(config_cntr:end,:)=[];
 
 
 %saving
-curr_dir = pwd;
-extacted_data_dir = fullfile(curr_dir,'Segmented-Demonstrations');
-fname = fullfile(extacted_data_dir , 'all_training_examples');
+fname = fullfile(segmented_data_dir , 'all_training_examples');
 
 save(fname, 'navi_examples','navi_subject_ids','object_features','object_response',...
     'object_subject_ids','neighbor_space_features','object_moving_direction',...

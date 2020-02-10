@@ -89,8 +89,8 @@ for ii = 1 : N_moved_objects
 %     interaction_table = readtable(fullfile([trials_base_dir '/P' num2str(subject_id)],...
 %         [  '/S001/new_structure/' trial_name '/movement/' object_name  '_movement_' trial_name '.csv']));
     
-    interaction_table = readtable(fullfile([trials_base_dir '/ICRA' sprintf('%02d',subject_id)],...
-        [  '/S001/new_structure/' trial_name '/movement/' object_name  '_movement_' trial_name '.csv']));
+    interaction_table = readtable(fullfile([trials_base_dir '/sub_' sprintf('%02d',subject_id)],...
+        [ trial_name '/movement/' object_name  '_movement_' trial_name '.csv']));
     
     %timestamp, x and z information
     time_space_interaction = table2array(interaction_table(:,[1 2 4]));
