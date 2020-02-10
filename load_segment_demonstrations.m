@@ -8,7 +8,7 @@ function load_segment_demonstrations()
 %Dataset directories,
 curr_dir = pwd;
 dataset_dir = fullfile(curr_dir,'Dataset');
-saving_dir = fullfile(curr_dir,'Segmented-Dataset');
+saving_dir = fullfile(curr_dir,'Segmented-Demonstrations');
 
 %which trials to load 
 shared_param = experiments_shared_params();
