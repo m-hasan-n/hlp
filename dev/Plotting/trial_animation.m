@@ -20,7 +20,7 @@ trial_path = fullfile(subject_dir,trial_name);
 
 delay_time=0.01;
 number_frames=10;
-fname = fullfile(video_dir, ['demo_S' sprintf('%03d',subject_id) '_' trial_name]);
+fname = fullfile(video_dir, ['demo_S' sprintf('%02d',subject_id) '_' trial_name]);
 writerObj = VideoWriter(fname);
 writerObj.FrameRate = 10;
 % open the video writer

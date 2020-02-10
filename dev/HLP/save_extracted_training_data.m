@@ -222,7 +222,10 @@ config_subject_ids(config_cntr:end,:)=[];
 
 
 %saving
-fname = fullfile(shared_param.extacted_data_dir , 'all_extracted_data');
+curr_dir = pwd;
+extacted_data_dir = fullfile(curr_dir,'Segmented-Demonstrations');
+fname = fullfile(extacted_data_dir , 'all_training_examples');
+
 save(fname, 'navi_examples','navi_subject_ids','object_features','object_response',...
     'object_subject_ids','neighbor_space_features','object_moving_direction',...
     'hand_to_obj_direction','target_to_obj_direction','object_dir_subject_ids',...

@@ -71,12 +71,12 @@ HLP_experiment_protocols(first_time, training_required, training_protocol)
 ```
 
 * Set 'first_time' flag to 1 for the first time you run this code. When 
-set, the code will load the segmented demonstrations (that were saved in 
-the previous step) from your local machine to MATLAB workspace. Afterwards, 
-it will extract the data required for training the classifiers. Data are 
-extracted as state-action pairs (training examples) for different 
-classification and regression models. Data extracted from the whole dataset
-are saved as '/segmented-demonstrations/all_extracted_data.mat'. This flag 
+set, the code will first load the segmented demonstrations that were saved in 
+the previous step. Afterwards, it will extract the data required for 
+training the classifiers/regression models. Data are extracted as 
+state-action pairs (training examples) for different classification and 
+regression models. Data extracted from the whole dataset are saved as 
+'/segmented-demonstrations/all_training_examples.mat'. This flag 
 must be set at the first run only. At other runs, the code will just load 
 the extracted data.
 

@@ -19,16 +19,9 @@ if(first_time)
 end
 
 %% loading extracted training data for all subjects from drive to workspace
-fname = fullfile(shared_param.extacted_data_dir , 'all_extracted_data');
+fname = fullfile(shared_param.extacted_data_dir , 'all_training_examples');
 load(fname)
-
-% , 'navi_examples','navi_subject_ids','object_features','object_response',...
-%     'object_subject_ids','neighbor_space_features','object_moving_direction',...
-%     'hand_to_obj_direction','target_to_obj_direction','object_dir_subject_ids',...
-%     'current_config','next_config','dist_feat','dir_feat','config_subject_ids',...
-%     'all_path_examples', 'path_subject_ids'
-
-%%    
+    
 %% Training and/or Testing
 % 80% training and 20% testing with 5 subject combinations
 % training_protocol = '80_20';
