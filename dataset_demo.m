@@ -1,14 +1,11 @@
 
-
-% dataset_demo
+%% dataset_demo
 % This script goes through some plotting functions that help you visualize
 % the scene in a trial showing the table and objects on top. 
 % You can also visualize motion of the human arm and objects and save this 
 % animation to a video.
 
-%%
-
-%Define which subject and which trial you want to visualize
+%% Define which subject and which trial you want to visualize
 %Subject IDs from 1 to 26 (excluding 5 and 10).
 %Trials IDs from 1 to 100.
 subject_id = 1; 
