@@ -100,7 +100,14 @@ HLP_experiment_protocols(1, 1, '80_20', 0)
 to (1) load and segment the datset (2) extract the 
 data required for machine learning and save the training examples and (3) 
 use the training examples to train the HLP algorithm 
-classifiers and regressors.      
+classifiers and regressors.   
+
+After the first time run:
+```
+HLP_experiment_protocols(0, 0, '80_20', 1)
+```  
+to test the HLP algorithm on new scenes unseen during training and visualize 
+the high-level generated plan.
 
 ## License
 
