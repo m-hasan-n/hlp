@@ -42,8 +42,19 @@ This script goes through some plotting functions that help you visualize
 the scene in of a VR trial showing the table and objects on top. You can also 
 visualize motion of the human arm and objects. The animation video will be saved to /animated-trials.
 
-## Running experimets, training and testing
+## Loading dataset and segmenting the demonstrations
+Before running experiments, training or testing, you have first to load the dataset and segment 
+the human demonstrations. Run:
 
+```
+load_segment_demonstrations
+```
+This script loads data from successful trials for all participants. It also segments the
+demonstrations according to the qualitative spatio-temporal representation given in the paper.
+Segmented demonstrations and extracted data are saved for further processing (e.g. classifiers training).
+
+
+## Running experimets, training and testing
 To reproduce the same experiments in ICRA-2020 paper with training and testing the decision classifiers, run:
 
 ```
