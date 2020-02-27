@@ -14,6 +14,9 @@ a high-level plan, which can be transferred to any arbitrary
 robot model. The VR dataset and the source code are released here. 
 More information are given in the ICRA 2020 paper [1]. 
 
+![hlp image](overview_fig.png "Setup of the virtual environment")
+
+
 
 ## Getting Started
 
