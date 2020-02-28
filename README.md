@@ -1,4 +1,4 @@
-# Human-like Planning
+# Human-like Planning (HLP)
 
 The objective of this project is learning high-level manipulation
 planning skills from humans and transfer these skills to robot
@@ -66,7 +66,7 @@ directory as '/sub_xx/T_yyy.mat' for each 'xx' subject and 'yyy' trial
 (demonstration).   
 
 
-## Running experimets, training and testing
+## Running experiments, training and testing
 To reproduce the experiments in ICRA-2020 paper with 
 training and testing the HLP algorithm, run:
 
@@ -113,12 +113,6 @@ HLP_experiment_protocols(0, 0, '80_20', 1)
 to test the HLP algorithm on new scenes unseen during training and visualize 
 the high-level generated plan.
 
-
-
-## Have a question?
-For queries about the HLP algorithm, please contact Mohamed Hasan (m.hasan@leeds.ac.uk).
-For queries about the VR dataset, please contact Matthew Warburton (m.warburton@leeds.ac.uk).  
-
  
 ## Citation
 If you find our code/dataset useful in your research, please cite our work:
@@ -129,9 +123,14 @@ If you find our code/dataset useful in your research, please cite our work:
  ICRA 2020.
 
 
-## Watch
+## Watch a video
 
 [![Watch the video](https://img.youtube.com/vi/aMIZP_SYa0I/maxresdefault.jpg)](https://youtu.be/aMIZP_SYa0I)
+
+
+## Have a question?
+For queries about the HLP algorithm, please contact Mohamed Hasan (m.hasan@leeds.ac.uk).
+For queries about the VR dataset, please contact Matthew Warburton (m.warburton@leeds.ac.uk).  
 
 ## License
 This project is licensed under the MIT License - see the 
