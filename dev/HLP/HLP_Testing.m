@@ -95,6 +95,7 @@ for ind_subj_size = 1 : num_size_iter
                         'neck_trajectory_xy','hand_trajectory_xy','elbow_trajectory_xy')
                     
                     if (plan_plot)
+                        figure
                         %plot the starting configuration
                         all_obj = table2array(scene_objects(:,[2 4 5 7]));
                         all_obj = to_matlab_rectangles(all_obj);

@@ -9,14 +9,14 @@
 %Subject IDs from 1 to 26 (excluding 5 and 10).
 %Trials IDs from 1 to 100.
 subject_id = 1; 
-trial_id = 15;
+trial_id = 25;
 
 %Define a sclae to plot
 plot_scale = 10;
 
 %Path to subject's directory
 curr_dir = pwd;
-subject_dir = [curr_dir '/Dataset/sub_' sprintf('%02d',subject_id)];
+subject_dir = [curr_dir '/dataset/sub_' sprintf('%02d',subject_id)];
 
 %% Plotting the scene table and objects on top
 %In each trial, the subject is told to start from a given location on the table
@@ -28,6 +28,6 @@ plot_scene_objects(subject_dir,trial_id, plot_scale);
 %% Animation
 %animate the human trajecory showing arm and object motions and save
 %the animation to a video on your disk
-video_save_dir = fullfile(curr_dir,'animated-trials');
+video_save_dir = fullfile(curr_dir,'animated-demonstrations');
 trial_animation(subject_dir,subject_id, trial_id, plot_scale, video_save_dir)
 

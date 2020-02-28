@@ -14,8 +14,8 @@ a high-level plan, which can be transferred to any arbitrary
 robot model. The VR dataset and the source code are released here. 
 More information are given in the ICRA 2020 paper [1]. 
 
-![hlp image](overview_fig.png "Setup of the virtual environment")
 
+![hlp image](overview_fig.png "Setup of the virtual environment")
 
 
 ## Getting Started
@@ -47,6 +47,7 @@ the scene in of a VR trial showing the table and objects on top.
 You can also visualize motion of the human arm and objects. 
 The animation video will be saved to '/animated-demonstrations' as 
 'demo_Sxx_Tyyy' for subject 'xx' and trial 'yyy'.
+
 
 ## Loading dataset and segmenting the demonstrations
 Before running experiments, training or testing, you have first to load 
@@ -128,6 +129,11 @@ If you find our code/dataset useful in your research, please cite our work:
  ICRA 2020.
 
 
+## Watch
+
+[![Watch the video](https://img.youtube.com/vi/aMIZP_SYa0I/maxresdefault.jpg)](https://youtu.be/aMIZP_SYa0I)
+
 ## License
 This project is licensed under the MIT License - see the 
 [LICENSE.md](LICENSE.md) file for details.
+
