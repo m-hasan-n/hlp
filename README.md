@@ -115,7 +115,7 @@ the high-level generated plan.
 
  
 ## Citation
-If you find the code/dataset useful in your research, please cite our work:
+If you find the code/dataset useful in your research, please cite [our work](http://arxiv.org/abs/2002.12738):
 
 * M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
  F. Mushtaq, M. Mon-Williams and A. G. Cohn, “Human-like 
