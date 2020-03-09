@@ -12,7 +12,7 @@ decision classifiers. Using these classifiers, our planner produced
 a list of waypoints in the task space. These waypoints provide
 a high-level plan, which can be transferred to any arbitrary
 robot model. The VR dataset and the source code are released here. 
-More information are given in the ICRA 2020 paper [1]. 
+More information are given in the [ICRA 2020 paper](http://arxiv.org/abs/2002.12738). 
 
 
 ![hlp image](overview_fig.png "Setup of the virtual environment")
@@ -115,13 +115,12 @@ the high-level generated plan.
 
  
 ## Citation
-If you find our code/dataset useful in your research, please cite our work:
+If you find the code/dataset useful in your research, please cite our work:
 
-* [1] M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
+* M. Hasan, M. Warburton, W. C. Agboh, M. R. Dogar, M. Leonetti, H. Wang,
  F. Mushtaq, M. Mon-Williams and A. G. Cohn, “Human-like 
  Planning for Reaching in Cluttered Environments, ” Accepted to appear in 
  ICRA 2020.
-
 
 ## Watch a video
 
