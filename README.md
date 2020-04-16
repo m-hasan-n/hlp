@@ -90,9 +90,7 @@ Unset it if you want to test the HLP algorithm using the (already)
 trained decision classifiers and regression models.  
 
 * Set 'training_protocol' to either '80_20' or 'num_subjects_effect'. 
-'80_20' protocol performs cross validation on the whole dataset from all 
-subjects with splitting the data into 80% for training and 20% for testing.  On the other hand, 
-'num_subjects_effect' splits the data on a subject-wise basis. 
+In '80_20' protocol, the data is randomly split into two disjoint sets: approximately 80% (19 participants and 1710 trials) for training, and 20% (5 participants and 450 trials) for testing. Use the other protocol, 'num_subjects_effect', to study the effect of incresing the number of subjects on learning. 
 
 * In case of testing the HLP algorithm, set 'plan_plot' to 1 if you want 
 to visualize the generated high-level plan.
