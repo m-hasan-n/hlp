@@ -33,7 +33,7 @@ end
 % train_protocol = 'num_subjects_effect';
 
 
-trained_models_dir = fullfile(curr_dir,'trained_models');
+trained_models_dir = fullfile(curr_dir,'trained-models');
     
     
 if(training_required)
