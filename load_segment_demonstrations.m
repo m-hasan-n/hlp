@@ -33,14 +33,14 @@ for ii = 1 : length(subjects_data)
         if ~ismember(subject_id,excluded_subjects)
             subject_id = ['sub_' sprintf('%02d',subject_id)] ;
             %prepare the directory for saving
-            saving_dir = fullfile(saving_dir,subject_id);
-            if ~exist(saving_dir,'dir')
-                mkdir(saving_dir)
+            subject_saving_dir = fullfile(saving_dir,subject_id);
+            if ~exist(subject_saving_dir,'dir')
+                mkdir(subject_saving_dir)
             end
             
             %call function to extract and save the data
             %         extract_trial_data_MOVING(subject_dir,ini_trial, saving_dir);
-            row_based_data_extraction(subject_dir,ini_trial, saving_dir,...
+            row_based_data_extraction(subject_dir,ini_trial, subject_saving_dir,...
                 final_trial);
         end
     end
